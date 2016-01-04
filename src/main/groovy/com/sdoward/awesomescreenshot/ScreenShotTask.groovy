@@ -12,9 +12,9 @@ class ScreenShotTask extends DefaultTask {
     @TaskAction
     public void createScreenShots() {
         ScreenShotExtension screenShotExtension = getProject().getExtensions().findByName("screenShot")
-        File file = new File(project.name + '/src/main/screenshots/')
+        File file = new File(project.name + "/src/main/${screenShotExtension.directory}/")
         file.listFiles().each {
-            currentDirectory = project.name + '/src/main/screenshots/' + it.name + '/'
+            currentDirectory = project.name + "/src/main/${screenShotExtension.directory}/${it.name}/"
             new File(currentDirectory + 'original').listFiles().each {
                 String fileName = it.name.replace(".png", "")
                 ScreenShot screenShot = new ScreenShot(getHeaders(fileName + '-header1'),

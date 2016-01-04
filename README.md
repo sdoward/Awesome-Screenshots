@@ -11,13 +11,14 @@ gradle plugin to transform boring screenshots to awesome ones AND allows localis
 apply plugin: 'com.sdoward.awesomescreenshots'
 ```
 
-- Define colors in your gradle script
+- Define colors and the directory in your gradle script
 
 ```groovy
 screenShot {
     backgroundColor = "#4ab581"
     shadowColor = "#18824e"
     textColor = "#12613a"
+    directory = "play"
 }
 
 ```
@@ -29,7 +30,7 @@ screenShot {
   |
   + - [main]
       |
-      + - [screenshots]
+      + - [play]
           |
           + - [en-US]
           |   |
