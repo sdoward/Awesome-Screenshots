@@ -1,4 +1,7 @@
-# Awesome-Screenshots (NOT PUBLISHED)
+# Awesome-Screenshots DEPRECATED
+
+Since I made ths repo public a number of projects have surficed which solve the same problem with more functionality so it is now deprecated
+
 gradle plugin to transform boring screenshots to awesome ones AND allows localisation of text
 
 ![alt text](https://github.com/sdoward/Awesome-Screenshots/blob/master/art/before.png "before")  -->       ![alt text](https://github.com/sdoward/Awesome-Screenshots/blob/master/art/after.png "after")
